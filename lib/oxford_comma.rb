@@ -9,6 +9,6 @@ def oxford_comma(array)
     word = array.pop
     array.insert(array.length, 'and ')
     str = array.join(', ')
-    return str, word
+    return str, word.join
   end
 end
