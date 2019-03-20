@@ -3,11 +3,11 @@ def oxford_comma(array)
     array.join(" and ")
   end
   if array.length == 3
-    array.join(", ")
+    array.join(', ')
     array.insert(3, ' and ')
   end
   if array.length > 3
-    array.join(", ")
-    array.insert(array.length - 2, ' and ')
+    array.join(', ')
+    array.insert(array.length - 1, ' and ')
   end
 end
