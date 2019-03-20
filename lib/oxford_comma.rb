@@ -6,8 +6,8 @@ def oxford_comma(array)
     return array.join(" and ")
   end
   if array.length >= 3
-    array.insert(array.length - 1, 'and ')
     word = array.pop
+    array.insert(array.length, 'and ')
     str = array.join(', '), word
     return str
   end
