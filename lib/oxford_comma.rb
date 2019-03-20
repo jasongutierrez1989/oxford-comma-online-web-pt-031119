@@ -1,10 +1,13 @@
 def oxford_comma(array)
+  if array.lenth == 1
+    return array.join
+  end
   if array.length == 2
-    array.join(" and ")
+    return array.join(" and ")
   end
   if array.length >= 3
     array.join(', ')
     array.insert(array.length - 1, ' and ')
+    return array
   end
-  return array.join
 end
